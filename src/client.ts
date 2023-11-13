@@ -105,7 +105,10 @@ function collectClientOptions(
   const pattern = `${path.join(workspaceFolder.uri.fsPath, "**", "*")}`;
 
   return {
-    documentSelector: [{ language: "ruby", pattern }],
+    documentSelector: [
+      { language: "ruby", pattern },
+      { language: "erb", pattern },
+    ],
     workspaceFolder,
     diagnosticCollectionName: LSP_NAME,
     outputChannel,

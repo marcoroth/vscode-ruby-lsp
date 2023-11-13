@@ -20,6 +20,7 @@
   ],
   "activationEvents": [
     "onLanguage:ruby",
+    "onLanguage:erb",
     "workspaceContains:Gemfile.lock",
     "workspaceContains:gems.locked"
   ],
